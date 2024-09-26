@@ -1,42 +1,23 @@
 .aboutMeContainer {
     display: flex;
-    align-items: flex-start; /* Aligns the items at the top */
-    justify-content: flex-start; /* Ensures the content starts from the left */
-    gap: 20px; /* Adds spacing between the image and the text */
+    align-items: center;
+    justify-content: center;
+    margin: 8% auto;
+    max-width: 1200px;
     padding: 20px;
-  }
-  
-  .aboutMeHeader {
-    flex-basis: 100%; /* Header takes up the full width */
-    margin-bottom: 20px;
-  }
-  
-  .aboutMeParagraph {
-    max-width: 600px; /* Limits the width of the text section */
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  .aboutMeContainer img {
-    width: 200px; /* Adjust image size */
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.profile-pic {
+    width: 250px;
     height: auto;
-    border-radius: 10px; /* Gives the image rounded corners */
-    object-fit: cover; /* Ensures the image scales well */
-  }
-  
-  /* Responsive Design for Mobile */
-  @media (max-width: 768px) {
-    .aboutMeContainer {
-      flex-direction: column; /* Stacks the content vertically on smaller screens */
-      align-items: center;
-    }
-  
-    .aboutMeContainer img {
-      width: 100%; /* Image will take full width on mobile */
-      max-width: 300px; /* Image doesn't stretch too wide */
-    }
-  
-    .aboutMeParagraph {
-      text-align: center;
-    }
-  }
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.aboutMeParagraph {
+    max-width: 600px;
+    text-align: left;
+}

@@ -1,22 +1,23 @@
-// import { useState } from 'react'
-import './App.css'
+import './App.css';
 import About from './Pages/About';
-import Portfolio from '/Pages/Portfolio'
+import Portfolio from './Pages/Portfolio';
+import Resume from './Pages/Resume';
+import Contact from './Pages/Contact'
 import PageNavbar from './Components/Navbar';
-import {Route, Switch} from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
-
   return (
     <>
-      <PageNavbar/>
-      <Switch>
-        <Route exact path='/#about' component={About}/>
-        <Route exact path='/#portfolio' component={About}/>
-      </Switch>
-      <About/>
+      <PageNavbar />
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
